@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Cámaras de Fotos</title>
+</head>
+<body>
+
+    <h1>Buscar Cámaras de Fotos</h1>
+
+    <form action="#" method="GET">
+        
+        <div>
+            <label for="buscar">Buscar por marca o modelo:</label>
+            <input type="search" id="buscar" name="q" placeholder="ej. Sony Alpha, Canon...">
+        </div>
+        <br>
+
+        <div>
+            <label>Tipo de cámara:</label><br>
+            <label>
+                <input type="radio" name="tipo" value="todas" checked> Todas
+            </label><br>
+            <label>
+                <input type="radio" name="tipo" value="reflex"> Réflex (DSLR)
+            </label><br>
+            <label>
+                <input type="radio" name="tipo" value="mirrorless"> EVIL / Mirrorless
+            </label><br>
+            <label>
+                <input type="radio" name="tipo" value="compacta"> Compacta
+            </label>
+        </div>
+        <br>
+
+        <div>
+            <label for="precio_max">Precio máximo (€):</label>
+            <input type="number" id="precio_max" name="precio_max" min="0" step="50" placeholder="ej. 1200">
+        </div>
+        <br>
+
+        <div>
+            <label for="resolucion">Resolución mínima:</label>
+            <select id="resolucion" name="resolucion">
+                <option value="">Cualquier resolución</option>
+                <option value="12">12 MP o más</option>
+                <option value="24">24 MP o más</option>
+                <option value="45">45 MP o más</option>
+            </select>
+        </div>
