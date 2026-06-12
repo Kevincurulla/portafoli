@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Altura de Párrafos</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fcfbfa;
+            color: #2b2621;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .caja-restringida {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 15px;
+            border: 2px solid #7dd3fc;
+            border-radius: 6px;
+            max-height: 10rem;
+            min-height: 5rem;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="caja-restringida">
+           

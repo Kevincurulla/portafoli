@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat de Conversación</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .chat-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .chat-message {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            max-width: 85%;
+        }
+
+        .chat-message.incoming {
+            align-self: flex-start;
+        }
+
+        .chat-message.outgoing {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        .avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e4e6eb;
+            flex-shrink: 0;
+        }
+
+        .message-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .message-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .incoming .message-header {
+            justify-content: flex-start;
+        }
+
+        .outgoing .message-header {
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        .user-name {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #050505;
+        }
+
+        .creation-date {
+            font-size: 8.5pt;
+            color: #65676b;
+        }
+
+        .bubble {
+            padding: 10px 16px;
+            border-radius: 18px;
+            font-size: 11pt;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+
+        .incoming .bubble {
+            background-color: #e4e6eb;
+            color: #050505;
+            border-top-left-radius: 4px;
+        }
+
+        .outgoing .bubble {
+            background-color: #0084ff;
+            color: #ffffff;
+            border-top-right-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-message incoming">
+            <img class="https://i.pinimg.com/236x/69/a8/b4/69a8b481812b95747517c5fed3dd3498.jpg" alt="Avatar de Marta">
+            <div class="message-content">
+                <div class="message-header">
+                    <span class="user-name">Marta</span>
+                    <span class="creation-date">12/06/2026 12:30</span>
+                </div>
+                <div class="bubble">
+                    ¡Hola! ¿Has terminado de revisar los archivos de maquetación del prólogo para el proyecto?
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-message outgoing">
+            <img class="avatar" src="https://preview.redd.it/what-are-your-leon-s-kennedy-headcanons-v0-az9e60yufmvg1.jpeg?width=640&crop=smart&auto=webp&s=1ab21d7dabfa923792b5d6b38f1665d62298e6e6" alt="Avatar de Carlos">
+            <div class="message-content">
+                <div class="message-header">
+                    <span class="user-name">Carlos</span>
+                    <span class="creation-date">12/06/2026 12:32</span>
+                </div>
+                <div class="bubble">
+                    ¡Hola, Marta! Sí, acabo de limpiar todo el código fuente. Ya no tiene comentarios y las fuentes cargan de forma correcta.
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-message incoming">
+            <img class="avatar" src="https://i.pinimg.com/236x/69/a8/b4/69a8b481812b95747517c5fed3dd3498.jpg" alt="Avatar de Marta">
+            <div class="message-content">
+                <div class="message-header">
+                    <span class="user-name">Marta</span>
+                    <span class="creation-date">12/06/2026 12:35</span>
+                </div>
+                <div class="bubble">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

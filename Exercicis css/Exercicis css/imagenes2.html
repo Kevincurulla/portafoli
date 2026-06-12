@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Tarjetas Flexbox</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-top: 4px solid transparent;
+        }
+
+        .card.blue {
+            border-top-color: #2563eb;
+        }
+
+        .card.green {
+            border-top-color: #16a34a;
+        }
+
+        .card.purple {
+            border-top-color: #9333ea;
+        }
+
+        .card-icon {
+            font-size: 24pt;
+            margin-bottom: 4px;
+        }
+
+        .card-title {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .card-description {
+            font-size: 10.5pt;
+            color: #4b5563;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .card-link {
+            margin-top: auto;
+            font-size: 10pt;
+            font-weight: bold;
+            color: #2563eb;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding-top: 12px;
+        }
+
+        .card.green .card-link {
+            color: #16a34a;
+        }
+
+        .card.purple .card-link {
+            color: #9333ea;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cards-container">
+        <div class="card blue">
+            <div class="card-icon">📘</div>
+            <h2 class="card-title">Estrategia</h2>
+            <p class="card-description">Planificación integral y definición de objetivos clave para orientar el crecimiento estructurado del proyecto a largo plazo.</p>
+            <a href="#" class="card-link">Saber más &rarr;</a>
+        </div>
+
+        <div class="card green">
+            <div class="card-icon">🟢</div>
+            <h2 class="card-title">Desarrollo</h2>
+            <p class="card-description">Implementación de código limpio, maquetación ágil y optimización de componentes para una experiencia web escalable.</p>
+            <a href="#" class="card-link">Saber más &rarr;</a>
+        </div>
+
+        <div class="card purple">
+            <div class="card-icon">🟪</div>
+            <h2 class="card-title">Análisis</h2>
+            <p class="card-description">Evaluación continua de métricas e interacción del usuario para asegurar un rendimiento óptimo de la interfaz.</p>
+            <a href="#" class="card-link">Saber más &rarr;</a>
+        </div>
+    </div>
+
+</body>
+</html>

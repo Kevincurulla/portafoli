@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Efecto de Escalera con Párrafos</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fcfbfa;
+            color: #2b2621;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .escalon {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 4px;
+            color: #ffffff;
+            transition: transform 0.2s ease;
+        }
+
+        .escalon:hover {
+            transform: scale(1.01);
+        }
+
+        .p1 {
+            width: 40%;
+            background-color: #1e3a8a;
+        }
+
+        .p2 {
+            width: 50%;
+            background-color: #2563eb;
+        }
+
+        .p3 {
+            width: 60%;
+            background-color: #3b82f6;
+        }
+
+        .p4 {
+            width: 70%;
+            background-color: #60a5fa;
+        }
+
+        .p5 {
+            width: 80%;
+            background-color: #93c5fd;
+            color: #1e293b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="escalon p1">Primer párrafo: Este es el escalón inicial con una anchura reducida al cuarenta por ciento.</p>
+        <p class="escalon p2">Segundo párrafo: Incrementamos el ancho un poco más para continuar la progresión descendente.</p>
+        <p class="escalon p3">Tercer párrafo: El bloque central de nuestra estructura mantiene la proporción intermedia establecida.</p>
+        <p class="escalon p4">Cuarto párrafo: Nos aproximamos a la base expandiendo la superficie horizontal del elemento.</p>
+        <p class="escalon p5">Quinto párrafo: Nivel final que concluye el efecto visual de escalera en el documento web.</p>
+    </div>
+
+</body>
+</html>

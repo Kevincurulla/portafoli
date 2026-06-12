@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño Cuadrícula Grid</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-top: 4px solid #64748b;
+        }
+
+        .grid-item.destacado {
+            grid-column: span 2;
+            border-top-color: #ef4444;
+            background-color: #fff1f2;
+        }
+
+        .grid-item.cyan {
+            border-top-color: #06b6d4;
+        }
+
+        .grid-item.amber {
+            border-top-color: #f59e0b;
+        }
+
+        .grid-item.emerald {
+            border-top-color: #10b981;
+        }
+
+        .item-icon {
+            font-size: 24pt;
+        }
+
+        .item-title {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .item-description {
+            font-size: 10.5pt;
+            color: #4b5563;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item destacado">
+            <div class="item-icon">📢</div>
+            <h2 class="item-title">Elemento Principal Ampliado</h2>
+            <p class="item-description">Este bloque ocupa un espacio prioritario dentro de la cuadrícula gracias a la propiedad de expansión de columnas, lo que le permite destacar sobre el resto del contenido periférico en la interfaz.</p>
+        </div>
+
+        <div class="grid-item cyan">
+            <div class="item-icon">⚡</div>
+            <h2 class="item-title">Rendimiento</h2>
+            <p class="item-description">Optimización de recursos para conseguir tiempos de carga mínimos y respuestas inmediatas.</p>
+        </div>
+
+        <div class="grid-item amber">
+            <div class="item-icon">🔒</div>
+            <h2 class="item-title">Seguridad</h2>
+            <p class="item-description">Garantía absoluta de protección de datos mediante el uso de protocolos cifrados estándar.</p>
+        </div>
+
+        <div class="grid-item emerald">
+            <div class="item-icon">🎨</div>
+            <h2 class="item-title">Interfaz</h2>
+            <p class="item-description">Estructuras visuales equilibradas y limpias pensadas de forma exclusiva para el usuario final.</p>
+        </div>
+
+        <div class="grid-item">
+            <div class="item-icon">⚙️</div>
+            <h2 class="item-title">Soporte</h2>
+            <p class="item-description">Mantenimiento constante y actualizaciones periódicas para asegurar la estabilidad del sistema.</p>
+        </div>
+    </div>
+
+</body>
+</html>
