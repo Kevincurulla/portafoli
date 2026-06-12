@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Secreto</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; 
+            background-color: #f4f1ea; 
+            color: #111111;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+       
+        .censurado {
+            background-color: #000000;
+            color: #000000;
+            display: inline-block;
+            line-height: 1.1;
+            user-select: none; 
+        }
+
+        
+        .w-nombre { width: 140px; }
+        .w-numero { width: 45px; }
+        .w-mision { width: 180px; }
+        .w-objetivo { width: 250px; }
+        .w-disp1 { width: 100px; }
+        .w-disp2 { width: 130px; }
+    </style>
+</head>
+<body>
+
+    <p>
+        Mi nombre es <span class="censurado w-nombre">&nbsp;</span> y soy el agente con el número <span class="censurado w-numero">&nbsp;</span> en la misión especial <span class="censurado w-mision">&nbsp;</span>. El objetivo <span class="censurado w-objetivo">&nbsp;</span> esta siendo investigado usando dispositivos <span class="censurado w-disp1">&nbsp;</span> y <span class="censurado w-disp2">&nbsp;</span>.
+    </p>
+
+    <p style="margin-top: 40px;">
+        
+    </p>
+
+</body>
+</html>
