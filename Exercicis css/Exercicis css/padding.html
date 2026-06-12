@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailchimp Section</title>
+    <style>
+        body {
+            background-color: #2b1d16;
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor-principal {
+            width: 100%;
+            max-width: 900px;
+            background-color: #f6ebd4;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .contenido-hero {
+            display: flex;
+            padding: 60px 50px;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .columna-izquierda {
+            flex: 1.2;
+        }
+
+        .columna-derecha {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            line-height: 1.15;
+            color: #241c15;
+            margin: 0 0 25px 0;
+            font-weight: normal;
+        }
+
+        .descripcion {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #241c15;
+            margin: 0 0 35px 0;
+            max-width: 420px;
+        }
+
+        .bloque-botones {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-primario {
+            background-color: #007c89;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 14px 28px;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-secundario {
+            color: #007c89;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .btn-secundario:hover {
+            border-bottom: 1px solid #007c89;
+        }
+
+        .contenedor-grafico {
+            position: relative;
+            width: 100%;
+            max-width: 340px;
+            aspect-ratio: 1;
+            background: linear-gradient(135px, #ff4e00 10%, #ffbe00 50%, #ffffff 90%);
+            border-radius: 50% 40% 45% 35%;
+            padding: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .imagen-simulada {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://andros.dev/static/img/courses/css/activities/9-1.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50% 40% 45% 35%;
+            border: 4px solid #ffffff;
+            box-sizing: border-box;
+        }
+
+        .barra-notificacion {
+            background-color: #cfe2fe;
+            color: #241c15;
+            text-align: center;
+            padding: 18px 20px;
+            font-size: 13px;
+            line-height: 1.4;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .barra-notificacion a {
+            color: #007c89;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        
+        <div class="contenido-hero">
+            <div class="columna-izquierda">
+                <h1>Ponte manos a la obra y aumenta las ventas</h1>
+                <p class="descripcion">
+                    Consigue que tus clientes interactúen y haz crecer tu negocio con la 
+                    plataforma de marketing avanzada pero fácil de usar de Mailchimp.
+                </p>
+                <div class="bloque-botones">
+                    <a href="#" class="btn-primario">Suscríbete</a>
+                    <a href="#" class="btn-secundario">Comparar planes</a>
+                </div>
+            </div>
+
+            <div class="columna-derecha">
+                <div class="contenedor-grafico">
+                    <div class="imagen-simulada"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="barra-notificacion">
+            Mailchimp ha sido adquirida por Intuit. Nuestro cofundador y CEO compartió la noticia con nuestros clientes. Léela <a href="#">aquí</a> en inglés.
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Tres Columnas con Flexbox</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #ffffff;
+            border-bottom: 2px solid #e4e6eb;
+            padding: 0 30px;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            font-size: 22pt;
+        }
+
+        .logo-text {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #1a1613;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 5px;
+        }
+
+        .nav-item {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #4b5563;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-item:hover {
+            background-color: #f1f5f9;
+            color: #2563eb;
+        }
+
+        .main-layout {
+            display: flex;
+            flex: 1;
+            padding: 30px;
+            gap: 30px;
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .sidebar-left {
+            width: 250px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e4e6eb;
+            padding: 20px;
+            align-self: flex-start;
+        }
+
+        .content-center {
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e4e6eb;
+            padding: 30px;
+        }
+
+        .sidebar-right {
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e4e6eb;
+            padding: 20px;
+            align-self: flex-start;
+        }
+
+        .panel-title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #1f2937;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .article-title {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #111827;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .article-text {
+            font-size: 11pt;
+            color: #374151;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .list-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .list-item {
+            font-size: 10.5pt;
+            color: #4b5563;
+            text-decoration: none;
+        }
+
+        .list-item:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <span class="logo-icon">⚓</span>
+            <span class="logo-text">MelvilleProject</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item">Inicio</a>
+            <a href="#" class="nav-item">Libros</a>
+            <a href="#" class="nav-item">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar-left">
+            <h2 class="panel-title">Navegación</h2>
+            <div class="list-items">
+                <a href="#" class="list-item">Capítulo I</a>
+                <a href="#" class="list-item">Capítulo II</a>
+                <a href="#" class="list-item">Capítulo III</a>
+                <a href="#" class="list-item">Capítulo IV</a>
+            </div>
+        </aside>
+
+        <main class="content-center">
+            <h1 class="article-title">Análisis de la Estructura Espacial</h1>
+            <p class="article-text">
+                La distribución tridimensional en el diseño de interfaces web permite organizar la jerarquía informativa distribuyendo el peso visual a lo largo del lienzo. Al emplear un eje contenedor adaptativo mediante el uso de cajas flexibles, logramos que los paneles laterales mantengan proporciones fijas o controladas mientras que la sección central absorbe el espacio restante de forma dinámica.
+            </p>
+            <p class="article-text">
+                Esta disposición en tres columnas emula los layouts clásicos editoriales de prensa y documentación especializada, garantizando que los menús auxiliares y los bloques informativos de soporte no interfieran en la lectura del flujo principal del artículo.
+            </p>
+        </main>
+
+        <aside class="sidebar-right">
+            <h2 class="panel-title">Detalles del Recurso</h2>
+            <div class="list-items">
+                <span class="list-item"><strong>Autor:</strong> Administración</span>
+                <span class="list-item"><strong>Fecha:</strong> Junio, 2026</span>
+                <span class="list-item"><strong>Formato:</strong> Interfaz Flexible</span>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>
